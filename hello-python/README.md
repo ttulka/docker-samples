@@ -40,3 +40,16 @@ docker push ttulka/helloworlds:python
 ```
 docker run -p 4000:8080 ttulka/helloworlds:python
 ```
+
+## Run as a load-balanced app
+```
+docker swarm init	// only once
+docker stack deploy -c docker-compose.yml hello-python-app
+docker service ls
+```
+
+### Take down the app and the swarm
+```
+docker stack rm hello-python-app
+docker swarm leave --force
+```
