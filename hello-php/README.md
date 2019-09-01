@@ -2,14 +2,14 @@
 
 ## Build the app
 ```
-docker build --tag=hello-php7.2-mysql .
+docker build --tag=php7.2-mysql .
 
 docker image ls
 ```
 
 ## Share your image
 ```
-docker tag hello-php7.2-mysql ttulka/helloworlds:php
+docker tag php7.2-mysql ttulka/helloworlds:php
 docker push ttulka/helloworlds:php
 ```
 

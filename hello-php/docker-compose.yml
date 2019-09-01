@@ -10,7 +10,7 @@ services:
       - "./www:/www"
       
   php:
-    image: hello-php7.2-mysql
+    image: php7.2-mysql
     volumes:
        - "./www:/www"
       
@@ -23,3 +23,5 @@ services:
       - MYSQL_PASSWORD=secret
     ports:
       - "8081:3306"
+    volumes:
+      - "./mysqldata:/var/lib/mysql"
