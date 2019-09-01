@@ -10,7 +10,7 @@ docker image ls
 ## Share your image
 ```
 docker tag hello-php7.2-mysql ttulka/helloworlds:php
-docker push ttulka/helloworlds:hello-php7.2-mysql
+docker push ttulka/helloworlds:php
 ```
 
 ## Run as a load-balanced app
